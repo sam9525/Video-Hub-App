@@ -365,6 +365,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.sheetOverlayShowing = false;
     } else if (event.key === 'Escape' && this.settingsButtons['showTags'].toggled) {
       this.toggleButton('showTags');
+    } else if (event.key === 'Escape' && this.showTagColorPicker ) {
+      this.showTagColorPicker = false;
     }
   }
 
@@ -2482,9 +2484,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
     // Clear sort filter
-    this.sortType = 'default';
-    this.appState.currentSort = 'default';
-    this.toggleButtonOff('sortOrder');
+    // this.sortType = 'default';
+    // this.appState.currentSort = 'default';
+    // this.toggleButtonOff('sortOrder');
 
     // Clear search strings
     this.fuzzySearchString = '';
