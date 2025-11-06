@@ -221,6 +221,9 @@
     "yearSliderHint": "Year Filter",
     "yearSliderMoreInfo": "Show the year slider filter",
     "playlistViewDescription": "Playlist view",
+    "clearAllFiltersMoreInfo": "Clears all currently applied filters and resets the search input",
+    "clearAllFiltersHint": "Clear all filters",
+    "clearAllFiltersDescription": "Clear all currently applied filters",
     "playlistViewHint": "Playlist view",
     "cleanOutPlaylistDescription": "Clean out playlist",
     "cleanOutPlaylistHint": "Clean out playlist"
@@ -310,6 +313,7 @@
   "SHORTCUTS": {
     "andClickAnyFile": "and click any file to see the file details",
     "andPress": "and press",
+    "clearAllFilters": "Clear all filters",
     "clickToRename": "To change a shortcut, click on it and press desired key on your keyboard.",
     "compactView": "Toggle compact view",
     "darkMode": "Toggle dark / light mode",

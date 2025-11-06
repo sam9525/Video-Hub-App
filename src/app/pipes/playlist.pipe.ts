@@ -8,7 +8,8 @@ import type { ImageElement } from '../../../interfaces/final-object.interface';
 
 @Pipe({
   name: 'playlistPipe',
-  pure: false
+  pure: false,
+  standalone: false,
 })
 export class PlaylistPipe implements PipeTransform {
 

@@ -84,9 +84,11 @@ export type SettingsButtonKey = 'autoFileTags'
  | 'thumbAutoAdvance'
  | 'timesPlayedFilter'
  | 'videoNotes'
+ | 'yearFilter'
+ | 'clearAllFilters'
  | 'showPlaylist'
  | 'yearFilter'
- | 'cleanOutPlaylist';
+ | 'cleanOutPlaylist'
 
 // Add `SettingsButtons` items here so they show up in the buttons ribbon and in the settings
 // Each array separates buttons into their own button groups visually
@@ -108,6 +110,7 @@ export const SettingsButtonsGroups: SettingsButtonKey[][] = [
     'magic',
     'regex',
     'fuzzy',
+    'clearAllFilters',
   ],
   [ // 2 - Filters & sorting options
     'durationFilter',
@@ -920,6 +923,14 @@ export const SettingsButtons: SettingsButtonsType = {
     hidden: false,
     iconName: 'icon-clean-out-playlist',
     title: 'BUTTONS.cleanOutPlaylistHint',
+    toggled: false
+  },
+  'clearAllFilters': {
+    description: 'BUTTONS.clearAllFiltersDescription',
+    hidden: false,
+    iconName: 'icon-clear-all-filters',
+    moreInfo: 'BUTTONS.clearAllFiltersMoreInfo',
+    title: 'BUTTONS.clearAllFiltersHint',
     toggled: false
   }
 };
